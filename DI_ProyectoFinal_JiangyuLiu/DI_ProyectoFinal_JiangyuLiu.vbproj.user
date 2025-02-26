@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Vistas\Alquiler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormAlquiler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormGenero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Pelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Socio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
