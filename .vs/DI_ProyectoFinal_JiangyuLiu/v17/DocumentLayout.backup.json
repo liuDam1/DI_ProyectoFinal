@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\modulos\\modulopelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\modulos\\modulopelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\formalquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\formalquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\modulos\\modulegenero.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\modulos\\modulegenero.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\alquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\alquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\formgenero.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\formgenero.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\modulos\\modulealquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\modulos\\modulealquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\formpelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\formpelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\formalquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\formalquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\pelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\pelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\formpelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\formpelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\pelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\pelicula.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|d:\\users\\jiang\\desktop\\di_proyectofinal_jiangyuliu\\di_proyectofinal_jiangyuliu\\vistas\\alquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B773B74D-8ADB-45F9-82BC-026B49A80E49}|DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu.vbproj|solutionrelative:di_proyectofinal_jiangyuliu\\vistas\\alquiler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,91 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormGenero.vb",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormGenero.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormGenero.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormGenero.vb",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormGenero.vb",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAgwJIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T18:16:52.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ModuleGenero.vb",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleGenero.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleGenero.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleGenero.vb",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleGenero.vb",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAwwJkAAAAKAAAAAAAAAA==",
+              "Title": "Alquiler.vb",
+              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb",
+              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb",
+              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb*",
+              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T18:16:40.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormPelicula.vb",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAswNIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T12:31:55.338Z",
+              "WhenOpened": "2025-02-26T21:23:45.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ModuloPelicula.vb",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuloPelicula.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuloPelicula.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuloPelicula.vb",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuloPelicula.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAAKAAAAAAAAAA==",
+              "Title": "FormAlquiler.vb",
+              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb",
+              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb",
+              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb*",
+              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb*",
+              "ViewState": "AgIAANEAAAAAAAAAAAAAANIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T12:28:42.536Z",
+              "WhenOpened": "2025-02-26T21:23:42.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Pelicula.vb",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ModuleAlquiler.vb",
+              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleAlquiler.vb",
+              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleAlquiler.vb",
+              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleAlquiler.vb*",
+              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Modulos\\ModuleAlquiler.vb*",
+              "ViewState": "AgIAABcBAAAAAAAAAAAuwCEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T12:28:28.157Z",
+              "WhenOpened": "2025-02-26T21:23:36.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pelicula.vb [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb [Dise\u00F1o]",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Pelicula.vb [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "FormAlquiler.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb",
+              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb",
+              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormAlquiler.vb [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T12:28:09.087Z",
+              "WhenOpened": "2025-02-26T21:23:32.778Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormPelicula.vb [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb",
-              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb [Dise\u00F1o]",
-              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\FormPelicula.vb [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "Alquiler.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb",
+              "RelativeDocumentMoniker": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb",
+              "ToolTip": "D:\\Users\\jiang\\Desktop\\DI_ProyectoFinal_JiangyuLiu\\DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "DI_ProyectoFinal_JiangyuLiu\\Vistas\\Alquiler.vb [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T12:31:53.117Z",
+              "WhenOpened": "2025-02-26T21:23:30.998Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

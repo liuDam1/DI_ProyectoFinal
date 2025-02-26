@@ -3,13 +3,13 @@
 Public Class FormAlquiler
     Private modoOperacion As String = ""
 
-    'Método para inicializar un nuevo alquiler
+    ' Método para inicializar un nuevo alquiler
     Public Sub InicializarNuevoAlquiler()
         modoOperacion = "Agregar"
         ConfigurarCamposParaNuevoAlquiler()
     End Sub
 
-    'Método para manejar el clic en el botón Guardar
+    ' Método para manejar el clic en el botón Guardar
     Private Sub Button_Guardar_Click(sender As Object, e As EventArgs) Handles Button_Guardar.Click
         Select Case modoOperacion
             Case "Agregar"
@@ -23,45 +23,46 @@ Public Class FormAlquiler
         End Select
     End Sub
 
-    'Método para manejar el clic en el menú "Nuevo Alquiler"
+    ' Método para manejar el clic en el menú "Nuevo Alquiler"
     Private Sub NuevoAlquilerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoAlquilerToolStripMenuItem.Click
         modoOperacion = "Agregar"
         ConfigurarCamposParaNuevoAlquiler()
     End Sub
 
-    'Método para manejar el clic en el menú "Borrar Alquiler"
+    ' Método para manejar el clic en el menú "Borrar Alquiler"
     Private Sub BorrarAlquilerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BorrarAlquilerToolStripMenuItem.Click
         modoOperacion = "Eliminar"
         ConfigurarCamposParaEliminar()
     End Sub
 
-    'Método para manejar el clic en el menú "Modificar"
+    ' Método para manejar el clic en el menú "Modificar"
     Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
         modoOperacion = "Modificar"
         ConfigurarCamposParaModificar()
     End Sub
 
-    'Método para manejar el clic en el menú "Lista"
+    ' Método para manejar el clic en el menú "Lista"
     Private Sub ListaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListaToolStripMenuItem.Click
         Me.Hide()
         Alquiler.Show()
     End Sub
 
-    'Método para inicializar la ventana para devolución
+    ' Método para inicializar la ventana para devolución
     Public Sub InicializarParaDevolucion()
         modoOperacion = "Devolver"
         ConfigurarCamposParaDevolucion()
     End Sub
 
-    'Método para manejar la tecla Enter en el campo de número de préstamo
+    ' Método para manejar la tecla Enter en el campo de número de préstamo
     Private Sub TextBox_NumPrestamo_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox_NumPrestamo.KeyDown
         If e.KeyCode = Keys.Enter AndAlso (modoOperacion = "Eliminar" Or modoOperacion = "Modificar" Or modoOperacion = "Devolver") Then
             CargarDatosAlquiler()
         End If
     End Sub
 
-    'Métodos auxiliares
+    ' Métodos auxiliares
     Private Sub ConfigurarCamposParaNuevoAlquiler()
+        LimpiarCampos()
         Dim nuevoNumeroPrestamo As Integer = ModuleAlquiler.ObtenerSiguienteNumeroPrestamo()
         TextBox_NumPrestamo.Text = nuevoNumeroPrestamo.ToString()
         TextBox_NumPrestamo.Enabled = False
@@ -73,6 +74,7 @@ Public Class FormAlquiler
     End Sub
 
     Private Sub ConfigurarCamposParaEliminar()
+        LimpiarCampos()
         Label1_Titulo.Text = "Eliminar Película"
         TextBox_NumPrestamo.Text = ""
         TextBox_NumPrestamo.Enabled = True
@@ -80,11 +82,11 @@ Public Class FormAlquiler
         TextBox_NumPelicula.Enabled = False
         TextBox_FechPrestamo.Enabled = False
         TextBox_FechDevolucion.Enabled = False
-        Button_Guardar.Text = "Aceptar"
-        LimpiarCampos()
+        Button_Guardar.Text = "Eliminar"
     End Sub
 
     Private Sub ConfigurarCamposParaModificar()
+        LimpiarCampos()
         Label1_Titulo.Text = "Modificar Película"
         TextBox_NumPrestamo.Text = ""
         TextBox_NumPrestamo.Enabled = True
@@ -93,10 +95,10 @@ Public Class FormAlquiler
         TextBox_FechPrestamo.Enabled = False
         TextBox_FechDevolucion.Enabled = False
         Button_Guardar.Text = "Guardar"
-        LimpiarCampos()
     End Sub
 
     Private Sub ConfigurarCamposParaDevolucion()
+        LimpiarCampos()
         Label1_Titulo.Text = "Devolución"
         TextBox_NumPrestamo.Enabled = True
         TextBox_NumSocio.Enabled = False
@@ -104,7 +106,6 @@ Public Class FormAlquiler
         TextBox_FechPrestamo.Enabled = False
         TextBox_FechDevolucion.Enabled = False
         Button_Guardar.Text = "Aceptar"
-        LimpiarCampos()
     End Sub
 
     Private Sub LimpiarCampos()
@@ -121,19 +122,16 @@ Public Class FormAlquiler
             If fila IsNot Nothing Then
                 TextBox_NumSocio.Text = fila("NumeroSocio").ToString()
                 TextBox_NumPelicula.Text = fila("NumeroPelicula").ToString()
-
-                ' FechaPrestamo como texto
                 TextBox_FechPrestamo.Text = fila("FechaPrestamo").ToString()
 
-                ' FechaDevolucion como texto (puede ser NULL)
+                ' FechaDevolucion puede ser NULL
                 If Not fila.IsNull("FechaDevolucion") Then
                     TextBox_FechDevolucion.Text = fila("FechaDevolucion").ToString()
                 Else
-                    ' Si no hay fecha de devolución, se establece la fecha actual
-                    TextBox_FechDevolucion.Text = Date.Today.ToString("yyyy-MM-dd")
+                    TextBox_FechDevolucion.Text = ""
                 End If
 
-                ' Habilitar solo el campo de fecha de devolución en modo "Devolver"
+                ' Habilitar campos según el modo de operación
                 If modoOperacion = "Devolver" Then
                     TextBox_FechDevolucion.Enabled = True
                 ElseIf modoOperacion = "Modificar" Then
@@ -146,6 +144,8 @@ Public Class FormAlquiler
                 MsgBox("No se encontró ningún registro con el número de préstamo proporcionado.", MsgBoxStyle.Information, "Información")
                 LimpiarCampos()
             End If
+        Else
+            MsgBox("El número de préstamo debe ser un valor numérico.", MsgBoxStyle.Critical, "Error")
         End If
     End Sub
 
@@ -158,7 +158,11 @@ Public Class FormAlquiler
         End If
         Dim fechaPrestamo As String = TextBox_FechPrestamo.Text
         Dim fechaDevolucion As String = TextBox_FechDevolucion.Text
-        ModuleAlquiler.AgregarAlquiler(numeroSocio, numeroPelicula, fechaPrestamo, fechaDevolucion)
+
+        If ModuleAlquiler.AgregarAlquiler(numeroSocio, numeroPelicula, fechaPrestamo, fechaDevolucion) Then
+            Me.Hide()
+            Alquiler.Show()
+        End If
     End Sub
 
     Private Sub EliminarAlquilerExistente()
@@ -167,7 +171,10 @@ Public Class FormAlquiler
             MsgBox("El número de préstamo debe ser un valor numérico.", MsgBoxStyle.Critical, "Error")
             Return
         End If
-        ModuleAlquiler.EliminarAlquiler(numeroPrestamo)
+        If ModuleAlquiler.EliminarAlquiler(numeroPrestamo) Then
+            Me.Hide()
+            Alquiler.Show()
+        End If
     End Sub
 
     Private Sub ModificarAlquilerExistente()
@@ -180,7 +187,11 @@ Public Class FormAlquiler
         End If
         Dim fechaPrestamo As String = TextBox_FechPrestamo.Text
         Dim fechaDevolucion As String = TextBox_FechDevolucion.Text
-        ModuleAlquiler.ModificarAlquiler(numeroPrestamo, numeroSocio, numeroPelicula, fechaPrestamo, fechaDevolucion)
+
+        If ModuleAlquiler.ModificarAlquiler(numeroPrestamo, numeroSocio, numeroPelicula, fechaPrestamo, fechaDevolucion) Then
+            Me.Hide()
+            Alquiler.Show()
+        End If
     End Sub
 
     Private Sub DevolverPelicula()
@@ -190,6 +201,7 @@ Public Class FormAlquiler
             Return
         End If
         Dim fechaDevolucion As String = TextBox_FechDevolucion.Text
+
         If ModuleAlquiler.ActualizarFechaDevolucion(numeroPrestamo, fechaDevolucion) Then
             Me.Hide()
             Alquiler.Show()

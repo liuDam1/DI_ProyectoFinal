@@ -7,6 +7,11 @@ Public Class Pelicula
         ModuloPelicula.CargarDatosListViewPelicula(ListView_Pelicula)
     End Sub
 
+    Private Sub Pelicula_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        ' Cargar los datos de las películas en el ListView
+        ModuloPelicula.CargarDatosListViewPelicula(ListView_Pelicula)
+    End Sub
+
     Private Sub Button_NuevaPelicula_Click(sender As Object, e As EventArgs) Handles Button_NuevaPelicula.Click
         ' Ocultar este formulario y mostrar el formulario para agregar una nueva película
         Me.Hide()

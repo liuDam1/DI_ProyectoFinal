@@ -63,3 +63,4 @@ D:\Users\jiang\Desktop\DI_ProyectoFinal_JiangyuLiu\DI_ProyectoFinal_JiangyuLiu\o
 D:\Users\jiang\Desktop\DI_ProyectoFinal_JiangyuLiu\DI_ProyectoFinal_JiangyuLiu\obj\Debug\net8.0-windows\DI_ProyectoFinal_JiangyuLiu.FormGenero.resources
 D:\Users\jiang\Desktop\DI_ProyectoFinal_JiangyuLiu\DI_ProyectoFinal_JiangyuLiu\obj\Debug\net8.0-windows\DI_ProyectoFinal_JiangyuLiu.Pelicula.resources
 D:\Users\jiang\Desktop\DI_ProyectoFinal_JiangyuLiu\DI_ProyectoFinal_JiangyuLiu\obj\Debug\net8.0-windows\DI_ProyectoFinal_JiangyuLiu.Socio.resources
+D:\Users\jiang\Desktop\DI_ProyectoFinal_JiangyuLiu\DI_ProyectoFinal_JiangyuLiu\obj\Debug\net8.0-windows\DI_ProyectoFinal_JiangyuLiu.sourcelink.json

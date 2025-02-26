@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("DI_ProyectoFinal_JiangyuLiu"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+706b993fec329f1aabad49876ffd96344f2e4a93"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("DI_ProyectoFinal_JiangyuLiu"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("DI_ProyectoFinal_JiangyuLiu"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

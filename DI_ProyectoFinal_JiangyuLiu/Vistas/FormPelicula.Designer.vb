@@ -119,7 +119,7 @@ Partial Class FormPelicula
         Label1_Titulo.AutoSize = True
         Label1_Titulo.BackColor = SystemColors.ActiveCaption
         Label1_Titulo.Dock = DockStyle.Fill
-        Label1_Titulo.Font = New Font("Segoe UI", 39.0F)
+        Label1_Titulo.Font = New Font("Segoe UI", 39F)
         Label1_Titulo.ForeColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
         Label1_Titulo.Location = New Point(153, 0)
         Label1_Titulo.Name = "Label1_Titulo"
@@ -138,8 +138,8 @@ Partial Class FormPelicula
         TableLayoutPanel2.Location = New Point(3, 110)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 2
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 80.0F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 80F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel2.Size = New Size(1300, 588)
         TableLayoutPanel2.TabIndex = 3
         ' 
@@ -147,13 +147,13 @@ Partial Class FormPelicula
         ' 
         TableLayoutPanel3.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
         TableLayoutPanel3.ColumnCount = 1
-        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel3.Controls.Add(Button_Guardar, 0, 0)
         TableLayoutPanel3.Dock = DockStyle.Fill
         TableLayoutPanel3.Location = New Point(3, 473)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 1
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
         TableLayoutPanel3.Size = New Size(1294, 112)
         TableLayoutPanel3.TabIndex = 1
         ' 
@@ -164,7 +164,7 @@ Partial Class FormPelicula
         Button_Guardar.FlatAppearance.BorderColor = SystemColors.ActiveCaption
         Button_Guardar.FlatAppearance.BorderSize = 5
         Button_Guardar.FlatStyle = FlatStyle.Flat
-        Button_Guardar.Font = New Font("Segoe UI", 19.0F)
+        Button_Guardar.Font = New Font("Segoe UI", 19F)
         Button_Guardar.ForeColor = SystemColors.ActiveCaption
         Button_Guardar.Location = New Point(497, 13)
         Button_Guardar.MaximumSize = New Size(300, 86)
@@ -179,8 +179,8 @@ Partial Class FormPelicula
         ' 
         TableLayoutPanel4.BackColor = SystemColors.ControlLight
         TableLayoutPanel4.ColumnCount = 2
-        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel4.Controls.Add(TableLayoutPanel5, 0, 4)
         TableLayoutPanel4.Controls.Add(TableLayoutPanel6, 1, 4)
         TableLayoutPanel4.Controls.Add(TableLayoutPanel7, 0, 3)
@@ -195,26 +195,26 @@ Partial Class FormPelicula
         TableLayoutPanel4.Location = New Point(3, 3)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 5
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel4.Size = New Size(1294, 464)
         TableLayoutPanel4.TabIndex = 2
         ' 
         ' TableLayoutPanel5
         ' 
         TableLayoutPanel5.ColumnCount = 2
-        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel5.Controls.Add(Label_DuracionPelicula, 0, 0)
         TableLayoutPanel5.Controls.Add(TextBox_DuracionPelic, 1, 0)
         TableLayoutPanel5.Dock = DockStyle.Fill
         TableLayoutPanel5.Location = New Point(3, 371)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 1
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
         TableLayoutPanel5.Size = New Size(641, 90)
         TableLayoutPanel5.TabIndex = 0
         ' 
@@ -222,7 +222,7 @@ Partial Class FormPelicula
         ' 
         Label_DuracionPelicula.Anchor = AnchorStyles.Right
         Label_DuracionPelicula.AutoSize = True
-        Label_DuracionPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_DuracionPelicula.Font = New Font("Segoe UI", 19F)
         Label_DuracionPelicula.Location = New Point(108, 19)
         Label_DuracionPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_DuracionPelicula.Name = "Label_DuracionPelicula"
@@ -233,7 +233,7 @@ Partial Class FormPelicula
         ' TextBox_DuracionPelic
         ' 
         TextBox_DuracionPelic.Anchor = AnchorStyles.Left
-        TextBox_DuracionPelic.Font = New Font("Segoe UI", 19.0F)
+        TextBox_DuracionPelic.Font = New Font("Segoe UI", 19F)
         TextBox_DuracionPelic.Location = New Point(330, 16)
         TextBox_DuracionPelic.Margin = New Padding(10, 3, 3, 3)
         TextBox_DuracionPelic.Name = "TextBox_DuracionPelic"
@@ -243,15 +243,15 @@ Partial Class FormPelicula
         ' TableLayoutPanel6
         ' 
         TableLayoutPanel6.ColumnCount = 2
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel6.Controls.Add(Label_CalificacionPelicula, 0, 0)
         TableLayoutPanel6.Controls.Add(TextBox_CalificacionPelic, 1, 0)
         TableLayoutPanel6.Dock = DockStyle.Fill
         TableLayoutPanel6.Location = New Point(650, 371)
         TableLayoutPanel6.Name = "TableLayoutPanel6"
         TableLayoutPanel6.RowCount = 1
-        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
         TableLayoutPanel6.Size = New Size(641, 90)
         TableLayoutPanel6.TabIndex = 1
         ' 
@@ -259,7 +259,7 @@ Partial Class FormPelicula
         ' 
         Label_CalificacionPelicula.Anchor = AnchorStyles.Right
         Label_CalificacionPelicula.AutoSize = True
-        Label_CalificacionPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_CalificacionPelicula.Font = New Font("Segoe UI", 19F)
         Label_CalificacionPelicula.Location = New Point(70, 19)
         Label_CalificacionPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_CalificacionPelicula.Name = "Label_CalificacionPelicula"
@@ -270,7 +270,7 @@ Partial Class FormPelicula
         ' TextBox_CalificacionPelic
         ' 
         TextBox_CalificacionPelic.Anchor = AnchorStyles.Left
-        TextBox_CalificacionPelic.Font = New Font("Segoe UI", 19.0F)
+        TextBox_CalificacionPelic.Font = New Font("Segoe UI", 19F)
         TextBox_CalificacionPelic.Location = New Point(330, 16)
         TextBox_CalificacionPelic.Margin = New Padding(10, 3, 3, 3)
         TextBox_CalificacionPelic.Name = "TextBox_CalificacionPelic"
@@ -280,15 +280,15 @@ Partial Class FormPelicula
         ' TableLayoutPanel7
         ' 
         TableLayoutPanel7.ColumnCount = 2
-        TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel7.Controls.Add(Label_AnoPelicula, 0, 0)
         TableLayoutPanel7.Controls.Add(TextBox_AnoPelic, 1, 0)
         TableLayoutPanel7.Dock = DockStyle.Fill
         TableLayoutPanel7.Location = New Point(3, 279)
         TableLayoutPanel7.Name = "TableLayoutPanel7"
         TableLayoutPanel7.RowCount = 1
-        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
         TableLayoutPanel7.Size = New Size(641, 86)
         TableLayoutPanel7.TabIndex = 2
         ' 
@@ -296,7 +296,7 @@ Partial Class FormPelicula
         ' 
         Label_AnoPelicula.Anchor = AnchorStyles.Right
         Label_AnoPelicula.AutoSize = True
-        Label_AnoPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_AnoPelicula.Font = New Font("Segoe UI", 19F)
         Label_AnoPelicula.Location = New Point(191, 17)
         Label_AnoPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_AnoPelicula.Name = "Label_AnoPelicula"
@@ -307,7 +307,7 @@ Partial Class FormPelicula
         ' TextBox_AnoPelic
         ' 
         TextBox_AnoPelic.Anchor = AnchorStyles.Left
-        TextBox_AnoPelic.Font = New Font("Segoe UI", 19.0F)
+        TextBox_AnoPelic.Font = New Font("Segoe UI", 19F)
         TextBox_AnoPelic.Location = New Point(330, 14)
         TextBox_AnoPelic.Margin = New Padding(10, 3, 3, 3)
         TextBox_AnoPelic.Name = "TextBox_AnoPelic"
@@ -317,15 +317,15 @@ Partial Class FormPelicula
         ' TableLayoutPanel8
         ' 
         TableLayoutPanel8.ColumnCount = 2
-        TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel8.Controls.Add(Label_GeneroPelicula, 0, 0)
         TableLayoutPanel8.Controls.Add(ComboBox_GeneroPelic, 1, 0)
         TableLayoutPanel8.Dock = DockStyle.Fill
         TableLayoutPanel8.Location = New Point(650, 279)
         TableLayoutPanel8.Name = "TableLayoutPanel8"
         TableLayoutPanel8.RowCount = 1
-        TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
         TableLayoutPanel8.Size = New Size(641, 86)
         TableLayoutPanel8.TabIndex = 3
         ' 
@@ -333,7 +333,7 @@ Partial Class FormPelicula
         ' 
         Label_GeneroPelicula.Anchor = AnchorStyles.Right
         Label_GeneroPelicula.AutoSize = True
-        Label_GeneroPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_GeneroPelicula.Font = New Font("Segoe UI", 19F)
         Label_GeneroPelicula.Location = New Point(137, 17)
         Label_GeneroPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_GeneroPelicula.Name = "Label_GeneroPelicula"
@@ -344,7 +344,7 @@ Partial Class FormPelicula
         ' ComboBox_GeneroPelic
         ' 
         ComboBox_GeneroPelic.Anchor = AnchorStyles.Left
-        ComboBox_GeneroPelic.Font = New Font("Segoe UI", 19.0F)
+        ComboBox_GeneroPelic.Font = New Font("Segoe UI", 19F)
         ComboBox_GeneroPelic.FormattingEnabled = True
         ComboBox_GeneroPelic.Location = New Point(330, 13)
         ComboBox_GeneroPelic.Margin = New Padding(10, 3, 3, 3)
@@ -356,7 +356,7 @@ Partial Class FormPelicula
         ' 
         Label_NumPelicula.Anchor = AnchorStyles.Right
         Label_NumPelicula.AutoSize = True
-        Label_NumPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_NumPelicula.Font = New Font("Segoe UI", 19F)
         Label_NumPelicula.ForeColor = Color.Red
         Label_NumPelicula.Location = New Point(407, 20)
         Label_NumPelicula.Margin = New Padding(3, 0, 10, 0)
@@ -369,7 +369,7 @@ Partial Class FormPelicula
         ' 
         Label_DirectorPelicula.Anchor = AnchorStyles.Right
         Label_DirectorPelicula.AutoSize = True
-        Label_DirectorPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_DirectorPelicula.Font = New Font("Segoe UI", 19F)
         Label_DirectorPelicula.Location = New Point(434, 112)
         Label_DirectorPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_DirectorPelicula.Name = "Label_DirectorPelicula"
@@ -381,7 +381,7 @@ Partial Class FormPelicula
         ' 
         Label_TituloPelicula.Anchor = AnchorStyles.Right
         Label_TituloPelicula.AutoSize = True
-        Label_TituloPelicula.Font = New Font("Segoe UI", 19.0F)
+        Label_TituloPelicula.Font = New Font("Segoe UI", 19F)
         Label_TituloPelicula.Location = New Point(492, 204)
         Label_TituloPelicula.Margin = New Padding(3, 0, 10, 0)
         Label_TituloPelicula.Name = "Label_TituloPelicula"
@@ -392,7 +392,7 @@ Partial Class FormPelicula
         ' TextBox_NumPelicula
         ' 
         TextBox_NumPelicula.Anchor = AnchorStyles.Left
-        TextBox_NumPelicula.Font = New Font("Segoe UI", 19.0F)
+        TextBox_NumPelicula.Font = New Font("Segoe UI", 19F)
         TextBox_NumPelicula.ForeColor = Color.Red
         TextBox_NumPelicula.Location = New Point(657, 17)
         TextBox_NumPelicula.Margin = New Padding(10, 3, 3, 3)
@@ -404,7 +404,7 @@ Partial Class FormPelicula
         ' TextBox_DirectorPelic
         ' 
         TextBox_DirectorPelic.Anchor = AnchorStyles.Left
-        TextBox_DirectorPelic.Font = New Font("Segoe UI", 19.0F)
+        TextBox_DirectorPelic.Font = New Font("Segoe UI", 19F)
         TextBox_DirectorPelic.Location = New Point(657, 109)
         TextBox_DirectorPelic.Margin = New Padding(10, 3, 3, 3)
         TextBox_DirectorPelic.Name = "TextBox_DirectorPelic"
@@ -414,7 +414,7 @@ Partial Class FormPelicula
         ' TextBox_TituloPelic
         ' 
         TextBox_TituloPelic.Anchor = AnchorStyles.Left
-        TextBox_TituloPelic.Font = New Font("Segoe UI", 19.0F)
+        TextBox_TituloPelic.Font = New Font("Segoe UI", 19F)
         TextBox_TituloPelic.Location = New Point(657, 201)
         TextBox_TituloPelic.Margin = New Padding(10, 3, 3, 3)
         TextBox_TituloPelic.Name = "TextBox_TituloPelic"
@@ -458,7 +458,7 @@ Partial Class FormPelicula
         ' 
         ' FormPelicula
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1306, 725)
         Controls.Add(Tabla_Layaut)

@@ -50,11 +50,9 @@ Module ModuleAlquiler
                 Dim item As New ListViewItem(reader("NumeroPrestamo").ToString())
                 item.SubItems.Add(reader("NumeroSocio").ToString())
                 item.SubItems.Add(reader("NumeroPelicula").ToString())
-
-                ' FechaPrestamo como texto
                 item.SubItems.Add(reader("FechaPrestamo").ToString())
 
-                ' FechaDevolucion como texto (puede ser NULL)
+                ' FechaDevolucion puede ser NULL
                 If Not reader.IsDBNull(reader.GetOrdinal("FechaDevolucion")) Then
                     item.SubItems.Add(reader("FechaDevolucion").ToString())
                 Else
@@ -77,20 +75,36 @@ Module ModuleAlquiler
         Dim con As New SQLiteConnection("Data Source=D:\Users\jiang\Desktop\BaseDatos\SQLite.db; Version=3;")
         Try
             con.Open()
-            If Not ExisteSocio(numeroSocio, con) OrElse Not ExistePelicula(numeroPelicula, con) Then
+
+            ' Verificar si el socio y la película existen
+            If Not ExisteSocio(numeroSocio, con) Then
+                MsgBox("El número de socio no existe.", MsgBoxStyle.Critical, "Error")
+                Return False
+            End If
+            If Not ExistePelicula(numeroPelicula, con) Then
+                MsgBox("El número de película no existe.", MsgBoxStyle.Critical, "Error")
                 Return False
             End If
 
+            ' Insertar el nuevo alquiler
             Dim insertCmd As New SQLiteCommand(QUERY_INSERT_ALQUILER, con)
             insertCmd.Parameters.AddWithValue("@NumeroSocio", numeroSocio)
             insertCmd.Parameters.AddWithValue("@NumeroPelicula", numeroPelicula)
             insertCmd.Parameters.AddWithValue("@FechaPrestamo", fechaPrestamo)
-            insertCmd.Parameters.AddWithValue("@FechaDevolucion", If(String.IsNullOrEmpty(fechaDevolucion), DBNull.Value, fechaDevolucion))
+
+            ' Manejar la fecha de devolución como NULL si no se proporciona
+            If String.IsNullOrEmpty(fechaDevolucion) Then
+                insertCmd.Parameters.AddWithValue("@FechaDevolucion", DBNull.Value) ' FechaDevolucion será NULL
+            Else
+                insertCmd.Parameters.AddWithValue("@FechaDevolucion", fechaDevolucion)
+            End If
+
             insertCmd.ExecuteNonQuery()
-            MsgBox("Datos guardados correctamente.", MsgBoxStyle.Information, "Éxito")
+
+            MsgBox("Alquiler agregado correctamente.", MsgBoxStyle.Information, "Éxito")
             Return True
         Catch ex As Exception
-            MsgBox("Error al guardar los datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
+            MsgBox("Error al agregar el alquiler: " & ex.Message, MsgBoxStyle.Critical, "Error")
             Return False
         Finally
             con.Close()
@@ -102,13 +116,26 @@ Module ModuleAlquiler
         Dim con As New SQLiteConnection("Data Source=D:\Users\jiang\Desktop\BaseDatos\SQLite.db; Version=3;")
         Try
             con.Open()
+
+            ' Verificar si el préstamo existe
+            Dim cmdVerificar As New SQLiteCommand("SELECT COUNT(*) FROM Prestamo WHERE NumeroPrestamo = @NumeroPrestamo", con)
+            cmdVerificar.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
+            Dim count As Integer = CInt(cmdVerificar.ExecuteScalar())
+
+            If count = 0 Then
+                MsgBox("El número de préstamo no existe.", MsgBoxStyle.Critical, "Error")
+                Return False
+            End If
+
+            ' Eliminar el alquiler
             Dim deleteCmd As New SQLiteCommand(QUERY_DELETE_ALQUILER, con)
             deleteCmd.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
             deleteCmd.ExecuteNonQuery()
-            MsgBox("Datos eliminados correctamente.", MsgBoxStyle.Information, "Éxito")
+
+            MsgBox("Alquiler eliminado correctamente.", MsgBoxStyle.Information, "Éxito")
             Return True
         Catch ex As Exception
-            MsgBox("Error al eliminar los datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
+            MsgBox("Error al eliminar el alquiler: " & ex.Message, MsgBoxStyle.Critical, "Error")
             Return False
         Finally
             con.Close()
@@ -120,23 +147,47 @@ Module ModuleAlquiler
         Dim con As New SQLiteConnection("Data Source=D:\Users\jiang\Desktop\BaseDatos\SQLite.db; Version=3;")
         Try
             con.Open()
-            If Not ExisteSocio(numeroSocio, con) OrElse Not ExistePelicula(numeroPelicula, con) Then
+
+            ' Verificar si el préstamo existe
+            Dim cmdVerificar As New SQLiteCommand("SELECT COUNT(*) FROM Prestamo WHERE NumeroPrestamo = @NumeroPrestamo", con)
+            cmdVerificar.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
+            Dim count As Integer = CInt(cmdVerificar.ExecuteScalar())
+
+            If count = 0 Then
+                MsgBox("El número de préstamo no existe.", MsgBoxStyle.Critical, "Error")
                 Return False
             End If
 
-            Dim fechaDevolucionFormateada As String = If(String.IsNullOrEmpty(fechaDevolucion), DBNull.Value.ToString(), fechaDevolucion)
+            ' Verificar si el socio y la película existen
+            If Not ExisteSocio(numeroSocio, con) Then
+                MsgBox("El número de socio no existe.", MsgBoxStyle.Critical, "Error")
+                Return False
+            End If
+            If Not ExistePelicula(numeroPelicula, con) Then
+                MsgBox("El número de película no existe.", MsgBoxStyle.Critical, "Error")
+                Return False
+            End If
 
+            ' Modificar el alquiler
             Dim updateCmd As New SQLiteCommand(QUERY_UPDATE_ALQUILER, con)
             updateCmd.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
             updateCmd.Parameters.AddWithValue("@NumeroSocio", numeroSocio)
             updateCmd.Parameters.AddWithValue("@NumeroPelicula", numeroPelicula)
             updateCmd.Parameters.AddWithValue("@FechaPrestamo", fechaPrestamo)
-            updateCmd.Parameters.AddWithValue("@FechaDevolucion", fechaDevolucionFormateada)
+
+            ' Manejar la fecha de devolución como NULL si no se proporciona
+            If String.IsNullOrEmpty(fechaDevolucion) Then
+                updateCmd.Parameters.AddWithValue("@FechaDevolucion", DBNull.Value) ' FechaDevolucion será NULL
+            Else
+                updateCmd.Parameters.AddWithValue("@FechaDevolucion", fechaDevolucion)
+            End If
+
             updateCmd.ExecuteNonQuery()
-            MsgBox("Datos modificados correctamente.", MsgBoxStyle.Information, "Éxito")
+
+            MsgBox("Alquiler modificado correctamente.", MsgBoxStyle.Information, "Éxito")
             Return True
         Catch ex As Exception
-            MsgBox("Error al modificar los datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
+            MsgBox("Error al modificar el alquiler: " & ex.Message, MsgBoxStyle.Critical, "Error")
             Return False
         Finally
             con.Close()
@@ -153,13 +204,14 @@ Module ModuleAlquiler
             cmd.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
             Dim adapter As New SQLiteDataAdapter(cmd)
             adapter.Fill(dt)
+
             If dt.Rows.Count > 0 Then
                 Return dt.Rows(0)
             Else
                 Return Nothing
             End If
         Catch ex As Exception
-            MsgBox("Error al obtener los datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
+            MsgBox("Error al obtener el alquiler: " & ex.Message, MsgBoxStyle.Critical, "Error")
             Return Nothing
         Finally
             con.Close()
@@ -171,10 +223,23 @@ Module ModuleAlquiler
         Dim con As New SQLiteConnection("Data Source=D:\Users\jiang\Desktop\BaseDatos\SQLite.db; Version=3;")
         Try
             con.Open()
+
+            ' Verificar si el préstamo existe
+            Dim cmdVerificar As New SQLiteCommand("SELECT COUNT(*) FROM Prestamo WHERE NumeroPrestamo = @NumeroPrestamo", con)
+            cmdVerificar.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
+            Dim count As Integer = CInt(cmdVerificar.ExecuteScalar())
+
+            If count = 0 Then
+                MsgBox("El número de préstamo no existe.", MsgBoxStyle.Critical, "Error")
+                Return False
+            End If
+
+            ' Actualizar la fecha de devolución
             Dim updateCmd As New SQLiteCommand(QUERY_UPDATE_FECHA_DEVOLUCION, con)
             updateCmd.Parameters.AddWithValue("@NumeroPrestamo", numeroPrestamo)
             updateCmd.Parameters.AddWithValue("@FechaDevolucion", fechaDevolucion)
             updateCmd.ExecuteNonQuery()
+
             MsgBox("Fecha de devolución actualizada correctamente.", MsgBoxStyle.Information, "Éxito")
             Return True
         Catch ex As Exception
@@ -192,13 +257,14 @@ Module ModuleAlquiler
             con.Open()
             Dim cmdMax As New SQLiteCommand(QUERY_OBTENER_SIGUIENTE_NUMERO, con)
             Dim maxValue As Object = cmdMax.ExecuteScalar()
+
             If maxValue Is DBNull.Value Then
                 Return 1
             Else
                 Return CInt(maxValue) + 1
             End If
         Catch ex As Exception
-            MsgBox("Error al obtener el número de préstamo: " & ex.Message, MsgBoxStyle.Critical, "Error")
+            MsgBox("Error al obtener el siguiente número de préstamo: " & ex.Message, MsgBoxStyle.Critical, "Error")
             Return -1
         Finally
             con.Close()
@@ -210,11 +276,7 @@ Module ModuleAlquiler
         Dim cmd As New SQLiteCommand(QUERY_EXISTE_SOCIO, con)
         cmd.Parameters.AddWithValue("@NumeroSocio", numeroSocio)
         Dim count As Integer = CInt(cmd.ExecuteScalar())
-        If count = 0 Then
-            MsgBox("El número de socio no existe en la base de datos.", MsgBoxStyle.Critical, "Error")
-            Return False
-        End If
-        Return True
+        Return count > 0
     End Function
 
     ' Método para verificar si una película existe
@@ -222,10 +284,6 @@ Module ModuleAlquiler
         Dim cmd As New SQLiteCommand(QUERY_EXISTE_PELICULA, con)
         cmd.Parameters.AddWithValue("@NumeroPelicula", numeroPelicula)
         Dim count As Integer = CInt(cmd.ExecuteScalar())
-        If count = 0 Then
-            MsgBox("El número de película no existe en la base de datos.", MsgBoxStyle.Critical, "Error")
-            Return False
-        End If
-        Return True
+        Return count > 0
     End Function
 End Module

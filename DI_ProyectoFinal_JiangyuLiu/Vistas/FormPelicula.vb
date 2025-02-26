@@ -47,6 +47,11 @@ Public Class FormPelicula
         ConfigurarCamposParaEliminar()
     End Sub
 
+    Private Sub VaolverPeliculaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VaolverPeliculaToolStripMenuItem.Click
+        Pelicula.Show()
+        Me.Hide()
+    End Sub
+
     ' Método para manejar la tecla Enter en el campo de número de película
     Private Sub TextBox_NumPelicula_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox_NumPelicula.KeyDown
         If e.KeyCode = Keys.Enter AndAlso (modoOperacion = "Modificar" Or modoOperacion = "Eliminar") Then
