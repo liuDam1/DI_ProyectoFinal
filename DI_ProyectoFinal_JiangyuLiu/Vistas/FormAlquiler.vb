@@ -134,6 +134,7 @@ Public Class FormAlquiler
                 ' Habilitar campos según el modo de operación
                 If modoOperacion = "Devolver" Then
                     TextBox_FechDevolucion.Enabled = True
+                    TextBox_FechDevolucion.Text = Date.Today.ToString("yyyy-MM-dd")
                 ElseIf modoOperacion = "Modificar" Then
                     TextBox_NumSocio.Enabled = True
                     TextBox_NumPelicula.Enabled = True
